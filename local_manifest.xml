@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+ <!-- Trees -->
+ <project path="device/xiaomi/vince" name="bhargavpalan/device_xiaomi_vince-1.git" remote="github" revision="arrow-11.0" />
+ <project path="vendor/xiaomi/vince" name="bhargavpalan/vendor_xiaomi_vince.git" remote="github" revision="11" />
+ <project path="kernel/xiaomi/vince" name="adnan-44/kernel_dark_ages_vince.git" remote="github" revision="darky" />
+ 
+</manifest>
