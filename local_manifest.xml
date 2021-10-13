@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote name="bhargavpalan"
+		fetch="https://github.com/bhargavpalan" />
+	
+	<remote name="BlackSuan"
+		fetch="https://github.com/Blacksuan19" />
+	
+	<remote name="clang"
+		fetch="https://github.com/kdrag0n" />
+	
+	<remote name="line"
+		fetch="https://github.com/LineageOS" />
+	
+	<remote name="pe"
+		fetch="https://github.com/PixelExperience" />
 
  <!-- Trees -->
  <project path="device/xiaomi/vince" name="bhargavpalan/device_xiaomi_vince-1.git" remote="github" revision="arrow-11.0" />
  <project path="vendor/xiaomi/vince" name="bhargavpalan/vendor_xiaomi_vince.git" remote="github" revision="11" />
- <project path="kernel/xiaomi/vince" name="adnan-44/kernel_dark_ages_vince.git" remote="github" revision="darky" />
+	<project path="kernel/xiaomi/vince" name="kernel_dark_ages_vince" remote="BlackSuan" revision="darky" clone-depth="1" />
  
 </manifest>
