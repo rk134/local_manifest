@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="bhargavpalan"
-		fetch="https://github.com/bhargavpalan" />
-	
-	<remote name="BlackSuan"
-		fetch="https://github.com/Blacksuan19" />
-	
-	<remote name="clang"
-		fetch="https://github.com/kdrag0n" />
-	
-	<remote name="line"
-		fetch="https://github.com/LineageOS" />
-	
-	<remote name="pe"
-		fetch="https://github.com/PixelExperience" />
 
- <!-- Trees -->
- <project path="device/xiaomi/vince" name="bhargavpalan/device_xiaomi_vince-1.git" remote="bhargavpalan" revision="arrow-11.0" />
- <project path="vendor/xiaomi/vince" name="bhargavpalan/vendor_xiaomi_vince.git" remote="bhargavpalan" revision="11" />
- <project path="kernel/xiaomi/vince" name="kernel_dark_ages_vince" remote="BlackSuan" revision="darky" clone-depth="1" />
- 
+        <remote name="pa-lunaa"
+           fetch="https://github.com/aospa-lunaa"
+           revision="topaz" />
+
+	
+	  <!-- Trees -->
+        <project name="android_device_realme_lunaa" path="device/realme/lunaa" remote="pa-lunaa" revision="topaz" />
+        <project name="android_vendor_realme" path="vendor/realme" remote="pa-lunaa" revision="topaz" />
+        <project name="kernel_msm-5.4" path="kernel/msm-5.4" remote="pa-lunaa" revision="main" />
+	
+       <remove-project name="AOSPA/android_vendor_aospa" />
+       <project path="vendor/aospa" name="android_vendor_aospa" remote="pa-lunaa" >
+          <linkfile src="build.sh" dest="rom-build.sh" />
+       </project>
 </manifest>
